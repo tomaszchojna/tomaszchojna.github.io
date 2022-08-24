@@ -5,7 +5,7 @@
 	<script type="text/javascript">
 		fetch("https://unit-aws-training-saa.s3.eu-central-1.amazonaws.com/object.json")
 		.then(data => data.json())
-		.then(res => document.querySelector("body").innerHTML = res)
+		.then(res => document.querySelector("body").innerHTML = JSON.stringify(res))
 	</script>
 </body>
 </html>
